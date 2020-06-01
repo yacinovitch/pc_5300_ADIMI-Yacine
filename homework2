@@ -1,0 +1,60 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1036{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red255\green0\blue0;}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\cf1\ul\b\f0\fs40\lang12 homework1\cf0\par
+
+\pard\sa200\sl276\slmult1\ulnone\b0\fs22 #include <stdio.h>\par
+#include <unistd.h>\par
+#include <stdlib.h>\par
+#include <sys/types.h>\par
+\par
+int main() \par
+\{\par
+        pid_t pid, ppid;\par
+\tab gid_t gid;\par
+\par
+\tab /* get the process id */\par
+\tab if ((pid = getpid()) < 0) \{\par
+\tab   perror("\par
+unable to get pid");\par
+\tab\} else \{\par
+\tab   printf("\par
+The process id is %d", pid);\par
+\tab\}\par
+\par
+\tab /* get the parent process id */\par
+\tab if ((ppid = getppid()) < 0) \{\par
+\tab   perror("\par
+unable to get the ppid");\par
+\tab\} else \{\par
+\tab   printf("\par
+The parent process id is %d", ppid);\par
+\tab\}\par
+\par
+\tab /* get the group process id */\par
+\tab if ((gid = getgid()) < 0) \{\par
+\tab   perror("\par
+unable to get the group id\par
+");\par
+\tab\} else \{\par
+\tab   printf("\par
+The group id is %d\par
+", gid);\par
+\tab\}\par
+\par
+\tab return(0);\par
+\}  \par
+
+\pard\sa200\sl276\slmult1\qc\cf1\ul\b\fs36 homework2\par
+\par
+
+\pard\sa200\sl276\slmult1\cf0\ulnone\b0\fs22\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+}
