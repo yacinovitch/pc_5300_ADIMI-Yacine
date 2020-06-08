@@ -1,12 +1,12 @@
-# inclut < stdio.h >
-# inclut < stdlib.h >
+# include < stdio.h >
+# include < stdlib.h >
 # include < unistd.h >
 
 void  picalc ( int n)
 {
 	signe int = 1 ;
 	double pi;
-	pour ( int i = 0 ; i <n; ++ i)
+	for ( int i = 0 ; i <n; ++ i)
 	{
 		pi + = signe / ( 2.0 * i + 1.0 );
 		signe * = - 1 ;
